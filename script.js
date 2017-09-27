@@ -112,7 +112,7 @@ function initMap(){
     controlUIA.style.backgroundColor = '#FF5733';
     controlUIA.style.border = '2px solid #FF5733';
     controlUIA.style.cursor = 'pointer';
-    controlUIA.style.marginBottom = '50px';
+    controlUIA.style.marginBottom = '100px';
     controlUIA.style.width = '100%';
     controlAdv.appendChild(controlUIA);
 
