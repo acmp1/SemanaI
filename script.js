@@ -103,8 +103,31 @@ function initMap(){
     controlText.style.paddingRight = '5px';
     controlText.innerHTML = 'Reportar';
     controlUI.appendChild(controlText);
+  
+    // Create a div to hold the control.
+    var controlAdv = document.createElement('div');
+
+    // Set CSS for the control border
+    var controlUIA = document.createElement('div');
+    controlUIA.style.backgroundColor = '#FF5733';
+    controlUIA.style.border = '2px solid #FF5733';
+    controlUIA.style.cursor = 'pointer';
+    controlUIA.style.marginBottom = '22px';
+    controlUIA.style.width = '100%';
+    controlAdv.appendChild(controlUIA);
+
+    var controlTextA = document.createElement('div');
+    controlTextA.style.color = 'rgb(25,25,25)';
+    controlTextA.style.fontFamily = 'Roboto,Arial,sans-serif';
+    controlTextA.style.fontSize = '16px';
+    controlTextA.style.lineHeight = '38px';
+    controlTextA.style.paddingLeft = '5px';
+    controlTextA.style.paddingRight = '5px';
+    controlTextA.innerHTML = 'Krav Maga: No solo por diversión, por necesidad.';
+    controlUIA.appendChild(controlTextA);
 
     map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(controlDiv);
+    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(controlAdv);
 
     var infowindow = new google.maps.InfoWindow({
     });
