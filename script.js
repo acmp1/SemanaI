@@ -112,7 +112,7 @@ function initMap(){
     controlUIA.style.backgroundColor = '#FF5733';
     controlUIA.style.border = '2px solid #FF5733';
     controlUIA.style.cursor = 'pointer';
-    controlUIA.style.marginBottom = '100px';
+    controlUIA.style.marginBottom = '10%';
     controlUIA.style.width = '100%';
     controlAdv.appendChild(controlUIA);
 
@@ -180,25 +180,6 @@ function initMap(){
             //}  );  
 
             });
-            /*google.maps.event.addListener(info, 'domready', function() {
-            document.id("map-form").addEvent("submit", function(e) {
-                e.stop();
-                var cCircle = new google.maps.Circle({
-                    strokeColor: '#FFFF00',
-                    strokeOpacity: 0.8,
-                    strokeWeight: 2,
-                    fillColor: '#FFFF00',
-                    fillOpacity: 0.35,
-                    map: map,
-                    center: pos,
-                    radius: 10
-                });
-                var infoWindowContent2 = [
-                "Delito " + document.getElementById("map-from-address").value + ". Incidencias: 1. Último: 27/09/17"
-                ].join("");
-                infoWindowX.setContent(infoWindowContent2);
-            });
-            });*/
 
         },function(){
             handleLocationError(true,infoWindowX,map.getCenter());
@@ -253,14 +234,3 @@ function handleLocationError(browserHasGeolocation,infoWindow,pos){
                                 'Error: The Geolocation service failed.':
                                 'Error: Your browser doesn\'t support geolocation');
         }
-
-//google.maps.event.addDomListener(window, 'load', initMap);
-
-/*google.maps.event.addListener(circ, 'click', function(ev){
-    infoWindow.setPosition(circ.getCenter());
-    infoWindow.open(map);
-
-
-});*/
-
-
